@@ -1,0 +1,39 @@
+{
+  "apps" : [{
+    // Application #1
+    "name"        : "spaxi-app-socket",
+    "script"      : "index.js",
+    "args"        : [],
+    "watch"       : true,
+    "node_args"   : "",
+    "merge_logs"  : true,
+    "cwd"         : "/var/local/spaxi_socket",
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "env_production" : {
+       "NODE_ENV": "production"
+    },
+    "env_staging" : {
+       "NODE_ENV" : "staging"
+    }
+  },{
+    // Application #2
+    "name"        : "spaxi-web-socket",
+    "script"      : "web-index.js",
+    "args"        : [],
+    "watch"       : true,
+    "node_args"   : "",
+    "merge_logs"  : true,
+    "cwd"         : "/var/local/spaxi_socket",
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "env_production" : {
+       "NODE_ENV": "production"
+    },
+    "env_staging" : {
+       "NODE_ENV" : "staging"
+    }
+  }]
+}
